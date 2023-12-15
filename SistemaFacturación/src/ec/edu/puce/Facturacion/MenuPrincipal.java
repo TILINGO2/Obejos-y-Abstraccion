@@ -8,11 +8,14 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JDesktopPane;
 import java.awt.CardLayout;
 
@@ -114,4 +117,21 @@ public class MenuPrincipal extends JFrame {
 	    desktopPane.add(frmListaCliente);
 	    frmListaCliente.setVisible(true);
 	}
-}
+	public FormUno() {
+		setBounds(100, 100, 450, 300);
+		getContentPane().setLayout(null);
+		JButton btMensaje = new JButton("Mensaje");
+		btMensaje.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Mensaje", "Titulo", JOptionPane.ERROR_MESSAGE);
+				
+			}
+		});
+		btMensaje.setBounds(128, 31, 117, 25);
+		getContentPane().add(btMensaje);
+		
+		J
+		
+	}
